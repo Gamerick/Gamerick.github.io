@@ -13,25 +13,35 @@
 <body>
     <script>
         const wikiPage = "https://stardewvalleywiki.com/"
+        var global_ingredients
+        var recipes
 
         function buildIngredientsTable(ingredients) {
             const cropList = document.getElementById("crops-table-body")
             const sorted = ingredients.sort((a, b) => a.name.localeCompare(b.name))
             sorted.forEach(ingredient => {
 
+                const tableRow = document.createElement("tr")
+                tableRow.innerHTML += `<td><a href="${wikiPage + ingredient.name}">${ingredient.name}</a></td>`
+
                 // Create the checkbox for tracking
                 const input = document.createElement("input")
                 input.type = "checkbox"
+                if (!!ingredient.owned) {
+                    input.checked = !!ingredient.owned
+                    tableRow.classList.add("table-success")
+                }
                 input.classList.add("form-check-input")
                 input.addEventListener("change", function (e) {
-                    this.parentElement.parentElement.classList.remove("table-success")
-                    if (this.checked) this.parentElement.parentElement.classList.add("table-success")
+                    if (this.checked) {
+                        tableRow.classList.add("table-success")
+                    } else {
+                        tableRow.classList.remove("table-success")
+                    }
+                    global_ingredients.find((el, index) => el.name == ingredient.name).owned = this.checked
+                    saveStateToLocalStorage(global_ingredients)
                 })
 
-
-                const tableRow = document.createElement("tr")
-                tableRow.innerHTML += `<td><a href="${wikiPage + ingredient.name}">${ingredient.name}</a></td>`
-                
                 const td = document.createElement("td")
                 td.appendChild(input)
                 tableRow.appendChild(td)
@@ -44,10 +54,26 @@
             // TODO
         }
 
+        function saveStateToLocalStorage(ingredients) {
+            localStorage.setItem("ingredients", JSON.stringify(ingredients))
+        }
+
+        function loadStateFromLocalStorage(ingredients) {
+            return JSON.parse(localStorage.getItem("ingredients"))
+        }
+
         window.onload = () => {
-            const ingredients = fetch("ingredients.json")
-                .then(res => res.json())
-                .then(ingredients => buildIngredientsTable(ingredients))
+            if (localStorage.getItem("ingredients")) {
+                global_ingredients = loadStateFromLocalStorage()
+                buildIngredientsTable(global_ingredients)
+            } else {
+                fetch("ingredients.json")
+                    .then(res => res.json())
+                    .then(json => {
+                        global_ingredients = json
+                        buildIngredientsTable(global_ingredients)
+                    })
+            }
         }
     </script>
     <div class="container">
