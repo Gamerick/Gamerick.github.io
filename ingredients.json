@@ -1,0 +1,230 @@
+[
+    {
+        "name": "Parsnip",
+        "category": "crop"
+    },
+    {
+        "name": "Parsnip",
+        "category": "crop"
+    },
+    {
+        "name": "Kale",
+        "category": "crop"
+    },
+    {
+        "name": "Potato",
+        "category": "crop"
+    },
+    {
+        "name": "Blue Jazz",
+        "category": "crop"
+    },
+    {
+        "name": "Green Bean",
+        "category": "crop"
+    },
+    {
+        "name": "Cauliflower",
+        "category": "crop"
+    },
+    {
+        "name": "Rhubarb",
+        "category": "crop"
+    },
+    {
+        "name": "Garlic",
+        "category": "crop"
+    },
+    {
+        "name": "Hot Pepper",
+        "category": "crop"
+    },
+    {
+        "name": "Radish",
+        "category": "crop"
+    },
+    {
+        "name": "Poppy",
+        "category": "crop"
+    },
+    {
+        "name": "Tomato",
+        "category": "crop"
+    },
+    {
+        "name": "Melon",
+        "category": "crop"
+    },
+    {
+        "name": "Blueberry",
+        "category": "crop"
+    },
+    {
+        "name": "Corn",
+        "category": "crop"
+    },
+    {
+        "name": "Red Cabbage",
+        "category": "crop"
+    },
+    {
+        "name": "Bok Choy",
+        "category": "crop"
+    },
+    {
+        "name": "Eggplant",
+        "category": "crop"
+    },
+    {
+        "name": "Amaranth",
+        "category": "crop"
+    },
+    {
+        "name": "Cranberries",
+        "category": "crop"
+    },
+    {
+        "name": "Yam",
+        "category": "crop"
+    },
+    {
+        "name": "Pumpkin",
+        "category": "crop"
+    },
+    {
+        "name": "Beet",
+        "category": "crop"
+    },
+    {
+        "name": "Artichoke",
+        "category": "crop"
+    },
+    {
+        "name": "Pineapple",
+        "category": "crop"
+    },
+    {
+        "name": "Taro Root",
+        "category": "crop"
+    },
+    {
+        "name": "Blackberry",
+        "category": "foragable"
+    },
+    {
+        "name": "Cave Carrot",
+        "category": "foragable"
+    },
+    {
+        "name": "Common Mushroom",
+        "category": "foragable"
+    },
+    {
+        "name": "Dandelion",
+        "category": "foragable"
+    },
+    {
+        "name": "Coconut",
+        "category": "foragable"
+    },
+    {
+        "name": "Fiddlehead Fern",
+        "category": "foragable"
+    },
+    {
+        "name": "Hazelnut",
+        "category": "foragable"
+    },
+    {
+        "name": "Wild Horseradish",
+        "category": "foragable"
+    },
+    {
+        "name": "Leek",
+        "category": "foragable"
+    },
+    {
+        "name": "Morel",
+        "category": "foragable"
+    },
+    {
+        "name": "Wild Plum",
+        "category": "foragable"
+    },
+    {
+        "name": "Winter Root",
+        "category": "foragable"
+    },
+    {
+        "name": "Ginger",
+        "category": "foragable"
+    },
+    {
+        "name": "Apple",
+        "category": "Tree Fruit"
+    },
+    {
+        "name": "Apricot",
+        "category": "Tree Fruit"
+    },
+    {
+        "name": "Banana",
+        "category": "Tree Fruit"
+    },
+    {
+        "name": "Mango",
+        "category": "Tree Fruit"
+    },
+    {
+        "name": "Egg",
+        "category": "Animal product"
+    },
+    {
+        "name": "Milk",
+        "category": "Animal product"
+    },
+    {
+        "name": "Cheese",
+        "category": "Artisan"
+    },
+    {
+        "name": "Mayonnaise",
+        "category": "Artisan"
+    },
+    {
+        "name": "Void Mayonnaise",
+        "category": "Artisan"
+    },
+    {
+        "name": "Coffee",
+        "category": "Artisan"
+    },
+    {
+        "name": "Maple Syrup",
+        "category": "Misc"
+    },
+    {
+        "name": "Squid Ink",
+        "category": "Misc"
+    },
+    {
+        "name": "Sugar",
+        "category": "General Store"
+    },
+    {
+        "name": "Wheat Flour",
+        "category": "General Store"
+    },
+    {
+        "name": "Rice",
+        "category": "General Store"
+    },
+    {
+        "name": "Oil",
+        "category": "General Store"
+    },
+    {
+        "name": "Vinegar",
+        "category": "General Store"
+    }
+]
